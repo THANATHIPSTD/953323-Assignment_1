@@ -77,13 +77,17 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: const EdgeInsets.all(15.0),
               child: Text(
                 'Welcome to Thanathip Shop',
-                style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold,
+                style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,
                 fontFamily: 'Tidy',
                 fontStyle: FontStyle.italic,
                 color: Colors.blue,
                 backgroundColor: Colors.pink
                 ),
               ),
+            ),
+            Container(
+              padding: const EdgeInsets.all(30),
+              child: Image.asset('images/moggle.png', width: 300, height: 300),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
