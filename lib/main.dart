@@ -74,6 +74,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text(
+                'Welcome to Thanathip Shop',
+                style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold,
+                fontFamily: 'Tidy',
+                fontStyle: FontStyle.italic,
+                color: Colors.blue,
+                backgroundColor: Colors.pink
+                ),
+              ),
+            ),
+            Padding(
               padding: const EdgeInsets.all(8.0),
               child: priceTextField(),
             ),
