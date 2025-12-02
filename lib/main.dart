@@ -86,9 +86,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.all(30),
-              child: Image.asset('images/moggle.png', width: 300, height: 300),
+              child: Image.asset( 'images/moggle.png' , width: 150, height: 150),
             ),
+            Image.network('https://media.tenor.com/_ImUhNRPsaYAAAAi/final-fantasy-xi-final-fantasy-11.gif' , width: 150, height: 150),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: priceTextField(),
