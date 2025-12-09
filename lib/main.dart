@@ -71,13 +71,13 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Container(
         padding: const EdgeInsets.all(12.0),
-        child: Column(
+        child: ListView(
           children: [
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Text(
                 'Welcome to Thanathip Shop',
-                style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,
+                style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,
                 fontFamily: 'Tidy',
                 fontStyle: FontStyle.italic,
                 color: Colors.blue,
