@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:firstapp/pages/detail.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -20,11 +21,11 @@ class _HomePageState extends State<HomePage> {
               children: [
                 MyBox("What is Flutter?", 
                 "Flutter is an open-source UI software development toolkit created by Google. It is used to develop",
-                "https://fluttergems.dev/media-cards/mesh.png"),
+                "https://d2ms8rpfqc4h24.cloudfront.net/flutter_sdk2_9578b31bc8.jpg"),
                 SizedBox(height: 20,),
                 MyBox("What is Dart?", 
                 "Dart is a client-optimized programming language for apps on multiple platforms. It is developed by Google and is used to build mobile, desktop, server, and web applications.",
-                "https://www.shutterstock.com/image-vector/light-green-white-background-aesthetic-600nw-2626553197.jpg"),
+                "https://miro.medium.com/v2/resize:fit:2360/format:webp/1*wqpaGKmnZHFotkN-LQb6LQ.jpeg"),
                 SizedBox(height: 20,),
                 MyBox("What is Computer?", 
                 "A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming.",
@@ -33,6 +34,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ]
+      
       ),
     );
 
@@ -49,6 +51,7 @@ Widget MyBox(String title, String description , String imgUrl) {
           image: DecorationImage(
             image: NetworkImage(imgUrl),
             fit: BoxFit.cover,
+            colorFilter : ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.darken)
           
           ),
         ),
@@ -58,6 +61,14 @@ Widget MyBox(String title, String description , String imgUrl) {
             children: [
               Text(title, style: TextStyle(fontSize: 25, color: Colors.white),),
               Text(description, style: TextStyle(fontSize: 16 , color: Colors.white),),
+
+              Spacer(),
+
+              Align(alignment: Alignment.bottomRight,child: TextButton(onPressed:() {
+                Navigator.push(
+                  context,MaterialPageRoute(builder: (context) => const DetailPage()),
+                );
+              }, child: Text("Read More", style: TextStyle(color: Colors.white ),)),)
             ],
           ),
         
