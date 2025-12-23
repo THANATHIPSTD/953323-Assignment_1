@@ -40,13 +40,14 @@ class _CalculatePageState extends State<CalculatePage> {
   @override
   Widget build(BuildContext context) {
   
-    return ListView(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Text(
-            'Welcome to Thanathip Shop',
-            style: TextStyle(
+    return Material(
+      child: ListView(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Text(
+              'Welcome to Thanathip Shop',
+              style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Tidy',
@@ -92,7 +93,7 @@ class _CalculatePageState extends State<CalculatePage> {
           child: showChangeText(),
         ),
       ],
-    );
+    ));
   }
 
   Widget priceTextField() {
