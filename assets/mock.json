@@ -1,0 +1,17 @@
+[
+  {
+    "title": "What is Flutter?",
+    "subtitle": "Flutter is an open-source UI software development toolkit created by Google. It is used to develop",
+    "image_url": "https://d2ms8rpfqc4h24.cloudfront.net/flutter_sdk2_9578b31bc8.jpg"
+  },
+  {
+    "title": "What is Dart?",
+    "subtitle": "Dart is a client-optimized programming language for apps on multiple platforms. It is developed by Google and is used to build mobile, desktop, server, and web applications.",
+    "image_url": "https://miro.medium.com/v2/resize:fit:2360/format:webp/1*wqpaGKmnZHFotkN-LQb6LQ.jpeg"
+  },
+  {
+    "title": "What is Computer?",
+    "subtitle": "A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming.",
+    "image_url": "https://www.simslifecycle.com/wp-content/uploads/sites/2/2022/01/Electronic-Numerical-Integrator-And-Computer.png"
+  }
+]
