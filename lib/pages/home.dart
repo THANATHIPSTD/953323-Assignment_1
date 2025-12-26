@@ -25,6 +25,7 @@ class _HomePageState extends State<HomePage> {
             data[index]['title'],
             data[index]['subtitle'],
             data[index]['image_url']
+            ,data[index]['detail']
           ); 
         },
       );
@@ -34,7 +35,7 @@ class _HomePageState extends State<HomePage> {
   );
   }
   
-Widget MyBox(String title, String subtitle , String imgUrl) {
+Widget MyBox(String title, String subtitle , String imgUrl , String detail) {
 
       return Container(
         margin: EdgeInsets.only(bottom: 20),
@@ -61,7 +62,7 @@ Widget MyBox(String title, String subtitle , String imgUrl) {
 
               Align(alignment: Alignment.bottomRight, child: TextButton(onPressed:() {
                 Navigator.push(
-                  context,MaterialPageRoute(builder: (context) => const DetailPage()),);
+                  context,MaterialPageRoute(builder: (context) => DetailsPage(title, subtitle, imgUrl, detail)),);
               }, child: Text("Read More", style: TextStyle(color: Colors.white ),)),)
             ],
           ),
